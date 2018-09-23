@@ -7,6 +7,10 @@ const AboutPagePreview = ({ entry, widgetFor }) => (
     title={entry.getIn(['data', 'title'])}
     content={widgetFor('body')}
   />
+  <AboutPageTemplate
+title={entry.getIn(['data', 'title'])}
+content={widgetFor('body')}
+/>
 )
 
 AboutPagePreview.propTypes = {
@@ -17,3 +21,4 @@ AboutPagePreview.propTypes = {
 }
 
 export default AboutPagePreview
+
